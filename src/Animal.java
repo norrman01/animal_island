@@ -16,6 +16,7 @@ public class Animal {
         return probability.nextInt(speed);
     }
 
+
     void move() {
         switch (getDirection()) {
             case 'd': {
