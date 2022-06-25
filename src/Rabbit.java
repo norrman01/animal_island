@@ -1,10 +1,10 @@
 import java.awt.*;
 import java.util.Random;
 
-public class Rabbit extends Animal {
+public class Rabbit extends Herbivore {
     @Override
     int getSpeed(int speed) {
-        speed =3;
+        speed =2;
         return super.getSpeed(speed);
     }
 

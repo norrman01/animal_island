@@ -19,26 +19,26 @@ public abstract class Animal {
     }
 
     public void move() {
-        int w = getSpeed(speed);
+        int run = getSpeed(speed);
         switch (getDirection()) {
             case 'd': {
-                if (position.y - w > 0) position.y -= w;
-                else position.y += w;
+                if (position.y - run > 0) position.y -= run;
+                else position.y += run;
                 break;
             }
             case 'u': {
-                if (position.y + w <= limitY) position.y += w;
-                else position.y -= w;
+                if (position.y + run <= limitY) position.y += run;
+                else position.y -= run;
                 break;
             }
             case 'r': {
-                if (position.x + w <= limitX) position.x += w;
-                else position.x -= w;
+                if (position.x + run <= limitX) position.x += run;
+                else position.x -= run;
                 break;
             }
             case 'l': {
-                if (position.x - w > 0) position.x -= w;
-                else position.x += w;
+                if (position.x - run > 0) position.x -= run;
+                else position.x += run;
             }
         }
     }

@@ -2,10 +2,10 @@ import java.awt.*;
 import java.util.Random;
 
 
-public class Wolf extends Animal{
+public class Wolf extends Predator{
     @Override
     int getSpeed(int speed) {
-        speed =7;
+        speed =3;
         return super.getSpeed(speed);
     }
 
