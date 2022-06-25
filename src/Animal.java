@@ -1,52 +1,45 @@
 import java.awt.*;
 import java.util.Random;
 
-public class Animal {
-    private Point position=new Point(5,5);
-    private int speed=5;
-    private Random probability = new Random();
-    private int limitX = 20;
-    private int limitY = 20;
-    private char[] direction = {'u', 'd', 'l', 'r'};
+public abstract class Animal {
+    public Random probability = new Random();
+    public Point position = new Point(probability.nextInt(10), probability.nextInt(10));
+    public int limitX = 20;
+    int speed = 2;
+    public int limitY = 20;
+    public char[] direction = {'u', 'd', 'l', 'r'};
 
-    char getDirection() {
+    public char getDirection() {
         return direction[probability.nextInt(4)];
     }
-    int getSpeed(){
-        return probability.nextInt(speed);
+
+    int getSpeed(int speed) {
+
+        return probability.nextInt(1, speed+1);
     }
 
-
-    void move() {
+    public void move() {
+        int w = getSpeed(speed);
         switch (getDirection()) {
             case 'd': {
-                if (position.y + getSpeed() < limitY) position.y++;
-                else position.y = 0;
+                if (position.y - w > 0) position.y -= w;
+                else position.y += w;
                 break;
             }
             case 'u': {
-                if (position.y - getSpeed() > 0) position.y--;
-                else position.y = limitY - 1;
+                if (position.y + w <= limitY) position.y += w;
+                else position.y -= w;
                 break;
             }
             case 'r': {
-                if (position.x + getSpeed() < limitX) position.x++;
-                else position.x = 0;
+                if (position.x + w <= limitX) position.x += w;
+                else position.x -= w;
                 break;
             }
             case 'l': {
-                if (position.x - getSpeed() > 0) position.x--;
-                else position.x = limitX - 1;
+                if (position.x - w > 0) position.x -= w;
+                else position.x += w;
             }
         }
-    }
-    public static void main(String[] args)  {
-        Animal rabbit = new Animal();
-        rabbit.move();
-        System.out.println(rabbit.position);
-        rabbit.move();
-        System.out.println(rabbit.position);
-        rabbit.move();
-        System.out.println(rabbit.position);
     }
 }
