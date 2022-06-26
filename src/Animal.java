@@ -1,12 +1,12 @@
 import java.awt.*;
 import java.util.Random;
 
-public abstract class Animal {
+public abstract class Animal implements Reproduction {
     public Random probability = new Random();
-    public Point position = new Point(probability.nextInt(10), probability.nextInt(10));
-    public int limitX = 20;
-    int speed = 2;
-    public int limitY = 20;
+    public Point position = new Point(probability.nextInt(49), probability.nextInt(49));
+    int speed;
+    public int limitX = 50;
+    public int limitY = 50;
     public char[] direction = {'u', 'd', 'l', 'r'};
 
     public char getDirection() {
@@ -15,7 +15,7 @@ public abstract class Animal {
 
     int getSpeed(int speed) {
 
-        return probability.nextInt(1, speed+1);
+        return probability.nextInt(1, speed + 1);
     }
 
     public void move() {

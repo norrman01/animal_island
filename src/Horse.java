@@ -18,5 +18,6 @@ public class Horse extends Herbivore{
         horse.move();
         System.out.println(horse.position);
 
+
     }
 }

@@ -1,5 +1,5 @@
 
-public class Mouse extends Herbivore{
+public class Mouse extends Herbivore {
     @Override
     int getSpeed(int speed) {
         speed =1;

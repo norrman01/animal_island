@@ -2,7 +2,7 @@ import java.awt.*;
 import java.util.Random;
 
 
-public class Wolf extends Predator{
+public class Wolf extends Predator implements Kill{
     @Override
     int getSpeed(int speed) {
         speed =3;
@@ -34,5 +34,10 @@ public class Wolf extends Predator{
         System.out.println(wolf.position);
         wolf.move();
         System.out.println(wolf.position);
+    }
+
+    @Override
+    public void kill() {
+
     }
 }
