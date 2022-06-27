@@ -3,17 +3,21 @@ import java.util.Random;
 
 public abstract class Animal implements Reproduction {
     public Random probability = new Random();
-    public Point position = new Point(probability.nextInt(49), probability.nextInt(49));
+    public Point position = new Point(probability.nextInt(2), probability.nextInt(2));
     int speed;
     public int limitX = 50;
     public int limitY = 50;
     public char[] direction = {'u', 'd', 'l', 'r'};
 
+    public Point getPosition() {
+        return position;
+    }
+
     public char getDirection() {
         return direction[probability.nextInt(4)];
     }
 
-    int getSpeed(int speed) {
+   int getSpeed(int speed) {
 
         return probability.nextInt(1, speed + 1);
     }
