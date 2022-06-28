@@ -21,14 +21,9 @@ public class Rabbit extends Herbivore {
         super();
     }
     public static void main(String[] args)  {
-        Rabbit rabbit = new Rabbit();
-        System.out.println(Island.createRabbit(10));
-        rabbit.move();
-        System.out.println(rabbit.position);
-        rabbit.move();
-        System.out.println(rabbit.position);
-        rabbit.move();
-        System.out.println(rabbit.position);
+
+        System.out.print(Island.createRabbit(5));
+
 
     }
 }

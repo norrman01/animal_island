@@ -3,7 +3,7 @@ import java.util.Random;
 
 public abstract class Animal implements Reproduction {
     public Random probability = new Random();
-    public Point position = new Point(probability.nextInt(2), probability.nextInt(2));
+    public Point position = new Point(probability.nextInt(50), probability.nextInt(50));
     int speed;
     public int limitX = 50;
     public int limitY = 50;
