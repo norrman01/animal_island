@@ -1,15 +1,15 @@
 import java.awt.*;
 import java.util.Random;
 
-public abstract class Animal implements Reproduction {
-    public Random probability = new Random();
-    public Point position = new Point(probability.nextInt(50), probability.nextInt(50));
+public  abstract class Animal implements Reproduction {
+    public  Random probability = new Random();
+    public Point position = new Point(probability.nextInt(4), probability.nextInt(4));
     int speed;
     public int limitX = 50;
     public int limitY = 50;
     public char[] direction = {'u', 'd', 'l', 'r'};
 
-    public Point getPosition() {
+    public  Point getPosition() {
         return position;
     }
 
@@ -46,4 +46,5 @@ public abstract class Animal implements Reproduction {
             }
         }
     }
+
 }

@@ -8,6 +8,15 @@ public class Rabbit extends Herbivore {
         return super.getSpeed(speed);
     }
 
+    @Override
+    public int hashCode() {
+        return System.identityHashCode(this);
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        return super.equals(obj);
+    }
 
     @Override
     public String toString() {
