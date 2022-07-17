@@ -1,0 +1,257 @@
+config:
+  BEAR:
+    BEAR:
+    BOA: 80
+    BOAR: 50
+    BUFFALO: 20
+    CATERPILLAR: 0
+    DEER: 80
+    DUCK: 10
+    EAGLE: 0
+    FOX: 0
+    GOAT: 70
+    HORSE: 40
+    MOUSE: 90
+    PLANT: 0
+    RABBIT: 80
+    SHEEP: 70
+    WOLF: 0
+  BOA:
+    BEAR: 0
+    BOA:
+    BOAR: 0
+    BUFFALO: 0
+    CATERPILLAR: 0
+    DEER: 0
+    DUCK: 10
+    EAGLE: 0
+    FOX: 15
+    GOAT: 0
+    HORSE: 0
+    MOUSE: 40
+    PLANT: 0
+    RABBIT: 20
+    SHEEP: 0
+    WOLF: 0
+  BUFFALO:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO:
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  CATERPILLAR:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR:
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  DEER:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER:
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  DUCK:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 90
+      DEER: 0
+      DUCK:
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  EAGLE:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 80
+      EAGLE:
+      FOX: 10
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 90
+      PLANT: 0
+      RABBIT: 90
+      SHEEP: 0
+      WOLF: 0
+  FOX:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 40
+      DEER: 0
+      DUCK: 60
+      EAGLE: 0
+      FOX:
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 90
+      PLANT: 0
+      RABBIT: 70
+      SHEEP: 0
+      WOLF: 0
+  GOAT:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT:
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  HORSE:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE:
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  MOUSE:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 90
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE:
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+  RABBIT:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT:
+      SHEEP: 0
+      WOLF: 0
+  SHEEP:
+      BEAR: 0
+      BOA: 0
+      BOAR: 0
+      BUFFALO: 0
+      CATERPILLAR: 0
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 0
+      PLANT: 100
+      RABBIT: 0
+      SHEEP:
+      WOLF: 0
+  WOLF:
+      BEAR: 0
+      BOA: 0
+      BOAR: 15
+      BUFFALO: 10
+      CATERPILLAR: 0
+      DEER: 15
+      DUCK: 40
+      EAGLE: 0
+      FOX: 0
+      GOAT: 60
+      HORSE: 10
+      MOUSE: 80
+      PLANT: 0
+      RABBIT: 60
+      SHEEP: 70
+      WOLF:
+  BOAR:
+      BEAR: 0
+      BOA: 0
+      BOAR:
+      BUFFALO: 0
+      CATERPILLAR: 90
+      DEER: 0
+      DUCK: 0
+      EAGLE: 0
+      FOX: 0
+      GOAT: 0
+      HORSE: 0
+      MOUSE: 50
+      PLANT: 100
+      RABBIT: 0
+      SHEEP: 0
+      WOLF: 0
+

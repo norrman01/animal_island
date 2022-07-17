@@ -1,65 +1,65 @@
 config:
-  Bear:
+  BEAR:
     speed: 2
     amount: 5
 
-  Boa:
+  BOA:
     speed: 1
     amount: 30
 
-  Boar:
+  BOAR:
     speed: 2
     amount: 50
 
-  Buffalo:
+  BUFFALO:
     speed: 3
     amount: 10
 
-  Caterpillar:
+  CATERPILLAR:
     speed: 1
     amount: 1000
 
-  Deer:
+  DEER:
     speed: 4
     amount: 20
 
-  Duck:
+  DUCK:
     speed: 4
     amount: 200
 
-  Eagle:
+  EAGLE:
     speed: 3
     amount: 20
 
-  Fox:
+  FOX:
     speed: 2
     amount: 30
 
-  Goat:
+  GOAT:
     speed: 3
     amount: 140
 
-  Horse:
+  HORSE:
     speed: 4
     amount: 20
 
-  Mouse:
+  MOUSE:
     speed: 1
     amount: 500
 
-  Plant:
+  PLANT:
     speed:
     amount: 200
 
-  Rabbit:
+  RABBIT:
     speed: 2
     amount: 150
 
-  Sheep:
+  SHEEP:
     speed: 3
     amount: 140
 
-  Wolf:
+  WOLF:
     speed: 3
     amount: 30
 

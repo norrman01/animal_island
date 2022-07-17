@@ -13,9 +13,9 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SetOperation {
-    public static final String ANIMAL_FEATURE_FILE =   ;
-    public static final String CHANCE_TO_KILL_FILE = ;
-    public static final String MAP_FEATURE_FILE = ;
+    public static final String ANIMAL_FEATURE_FILE = "animal island/src/com/company/characteristic/animalConfig.yml"  ;
+    public static final String CHANCE_TO_KILL_FILE = "animal island/src/com/company/characteristic/chanceToKill.yml" ;
+    public static final String MAP_FEATURE_FILE = "animal island/src/com/company/characteristic/mapSet.yml";
 
     static volatile SetOperation setOperation;
 
