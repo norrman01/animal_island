@@ -1,65 +1,97 @@
 config:
   BEAR:
+
     speed: 2
+
     amount: 5
 
   BOA:
+
     speed: 1
+
     amount: 30
 
   BOAR:
+
     speed: 2
+
     amount: 50
 
   BUFFALO:
+
     speed: 3
+
     amount: 10
 
   CATERPILLAR:
+
     speed: 1
+
     amount: 1000
 
   DEER:
+
     speed: 4
+
     amount: 20
 
   DUCK:
+
     speed: 4
+
     amount: 200
 
   EAGLE:
+
     speed: 3
+
     amount: 20
 
   FOX:
+
     speed: 2
+
     amount: 30
 
   GOAT:
+
     speed: 3
+
     amount: 140
 
   HORSE:
+
     speed: 4
+
     amount: 20
 
   MOUSE:
+
     speed: 1
+
     amount: 500
 
   PLANT:
+
     speed:
+
     amount: 200
 
   RABBIT:
+
     speed: 2
+
     amount: 150
 
   SHEEP:
+
     speed: 3
+
     amount: 140
 
   WOLF:
+
     speed: 3
+
     amount: 30
 

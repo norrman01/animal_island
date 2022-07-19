@@ -14,9 +14,9 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class SetOperation {
-    public static final String ANIMAL_FEATURE_FILE_PATH = "animal island/src/com/company/characteristic/animalConfig.yml";
-    public static final String CHANCE_TO_KILL_FILE_PATH = "animal island/src/com/company/characteristic/chanceToKill.yml";
-    public static final String MAP_FEATURE_FILE_PATH = "animal island/src/com/company/characteristic/mapSet.yml";
+    public static final String ANIMAL_PROPERTIES_FILE_PATH = "animal-island/src/com/company/characteristic/animalConfig.yml";
+    public static final String CHANCE_TO_KILL_PROPERTIES_FILE_PATH = "animal-island/src/com/company/characteristic/chanceToKill.yml";
+    public static final String MAP_PROPERTIES_FILE_PATH = "animal-island/src/com/company/characteristic/mapSet.yml";
 
     static volatile SetOperation setOperation;
 
@@ -35,11 +35,10 @@ public class SetOperation {
             synchronized (SetOperation.class) {
                 if (setOperation == null) {
                     setOperation = new SetOperation(
-                            ReadConf.readSet(ANIMAL_FEATURE_FILE_PATH, AnimalsConfig.class),
-                            ReadConf.readSet(CHANCE_TO_KILL_FILE_PATH, ChanceToKill.class),
-                            ReadConf.readSet(MAP_FEATURE_FILE_PATH, MapSet.class)
+                            ReadConf.readSet(ANIMAL_PROPERTIES_FILE_PATH, AnimalsConfig.class),
+                            ReadConf.readSet(CHANCE_TO_KILL_PROPERTIES_FILE_PATH, ChanceToKill.class),
+                            ReadConf.readSet(MAP_PROPERTIES_FILE_PATH, MapSet.class)
                     );
-
                 }
             }
         }

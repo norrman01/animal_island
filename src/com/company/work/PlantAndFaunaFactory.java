@@ -1,14 +1,16 @@
 package com.company.work;
-import com.company.exemplar.NatureObject;
+
+import com.company.exemplar.*;
+
 import com.company.exemplar.enums.ViableType;
 import com.company.exemplar.individ.*;
 import com.company.set.ViableConfig;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
-import static com.company.exemplar.enums.ViableType.*;
 import java.util.Map;
 import java.util.function.Function;
 
+import static com.company.exemplar.enums.ViableType.*;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class PlantAndFaunaFactory {
 

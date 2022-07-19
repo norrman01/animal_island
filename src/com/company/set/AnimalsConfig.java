@@ -1,6 +1,6 @@
 package com.company.set;
 
-
+import com.company.exemplar.enums.ViableType;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.Setter;
@@ -11,6 +11,6 @@ import java.util.Map;
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class AnimalsConfig {
-    Map <ViableConfig, ViableConfig> config;
+    Map <ViableType, ViableConfig> config;
 
 }

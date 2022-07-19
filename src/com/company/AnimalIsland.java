@@ -14,9 +14,15 @@ import com.company.work.coordinator.ReproduceCoordinator;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
-import java.util.*;
+
 import java.util.concurrent.*;
 import java.util.stream.Collectors;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
+
 
 
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
@@ -48,7 +54,7 @@ public class AnimalIsland {
             thread.setDaemon(true);
             return thread;
         });
-        for (List<Cell> cellList:land.getCells()){
+        for (List<Cell> cellList : land.getCells()){
             Runnable cellTack = () -> {
                 for (Cell cell :cellList){
                     List<NatureObject> objectList = cell.getObjectList();
@@ -63,7 +69,7 @@ public class AnimalIsland {
             };
             executorService.submit(cellTack);
         }
-        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 5, 5, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 5, 9, TimeUnit.SECONDS);
         executorService.shutdown();
     }
 
