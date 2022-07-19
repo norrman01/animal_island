@@ -11,7 +11,7 @@ public class MoveService {
 
         return switch (course) {
             case UP -> calcCellToMove(land, cell.getX(), cell.getY() - speed - 1);
-            case DOWN -> calcCellToMove(land, cell.getX(), cell.getY() - speed + 1);
+            case DOWN -> calcCellToMove(land, cell.getX(), cell.getY() + speed - 1);
             case LEFT -> calcCellToMove(land, cell.getX() - speed - 1, cell.getY());
             case RIGHT -> calcCellToMove(land, cell.getX() + speed - 1, cell.getY());
         };

@@ -49,8 +49,8 @@ public class AnimalIsland {
             System.out.println();
         };
         ExecutorService executorService = Executors.newCachedThreadPool();
-         ScheduledExecutorService scheduledExecutorService =  Executors.newSingleThreadScheduledExecutor(element ->{
-            Thread thread = new Thread(element);
+         ScheduledExecutorService scheduledExecutorService =  Executors.newSingleThreadScheduledExecutor(r ->{
+            Thread thread = new Thread(r);
             thread.setDaemon(true);
             return thread;
         });
@@ -69,7 +69,9 @@ public class AnimalIsland {
             };
             executorService.submit(cellTack);
         }
-        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 10, 20, TimeUnit.SECONDS);
+
+        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 5, 5, TimeUnit.SECONDS);
+
         executorService.shutdown();
     }
 

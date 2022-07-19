@@ -18,7 +18,7 @@ public class RandomKill {
 
     public NatureObject chooseRandomNatureObjectForKill(Cell cell, Fauna fauna){
         List<NatureObject> killing = cell.getObjectList().stream().
-                filter(element -> element.getViableType().equals(fauna.getViableType())).toList();
+                filter(element -> !element.getViableType().equals(fauna.getViableType())).toList();
         ThreadLocalRandom random = randomOperation.getRandom();
         int randomIndex = random.nextInt(0, killing.size());
         return killing.get(randomIndex);
