@@ -69,7 +69,7 @@ public class AnimalIsland {
             };
             executorService.submit(cellTack);
         }
-        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 5, 9, TimeUnit.SECONDS);
+        scheduledExecutorService.scheduleWithFixedDelay(scheduleTask, 10, 20, TimeUnit.SECONDS);
         executorService.shutdown();
     }
 

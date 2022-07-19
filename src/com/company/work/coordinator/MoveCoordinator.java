@@ -20,6 +20,7 @@ public class MoveCoordinator {
     public void move(Land land, Cell cell, Fauna fauna){
         Course course = randomCourse.chooseRandomCourse(cell, fauna.getSpeed());
         Cell purposeCell = moveService.calcCellToMove(land, cell, fauna.getSpeed(), course);
+
         cell.getObjectList().remove(fauna);
         purposeCell.getObjectList().add(fauna);
     }

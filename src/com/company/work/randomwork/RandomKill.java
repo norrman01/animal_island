@@ -20,7 +20,8 @@ public class RandomKill {
         List<NatureObject> killing = cell.getObjectList().stream().
                 filter(element -> element.getViableType().equals(fauna.getViableType())).toList();
         ThreadLocalRandom random = randomOperation.getRandom();
-        int randindex = random.nextInt(0, killing.size());
-        return killing.get(randindex);
+        int randomIndex = random.nextInt(0, killing.size());
+        return killing.get(randomIndex);
     }
 }
+
